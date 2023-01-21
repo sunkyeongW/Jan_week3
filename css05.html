@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>css box-model에 대한 HTML 문서</title>
+        <style>
+            div{
+                box-sizing: border-box;
+                border: 3px solid red;
+                padding: 10px;
+                margin: 20px;
+                width: 200px; height: 35px;
+                padding-left: 5px;
+            }
+            span{
+                width: 100px; height: 100px;
+                display: inline-block;
+                margin: 5px 30px 10px 50px;
+                padding: 10px 30px;
+            }
+
+            .image{
+                box-sizing: border-box;
+                width: 500px; height: 500px;
+                border: 1px solid blueviolet;
+                background-image: url(image/image.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 500px 500px;
+
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div>요소의 콘텐츠</div>
+        <span>체크</span>
+        <div class="image">백그라운드 이미지 설정</div>
+    </body>
+</html>
