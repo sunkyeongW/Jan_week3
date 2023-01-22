@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>의사요소에 대한 HTML 문서</title>
+        <style>
+            P::first-line{
+                color: blue;
+            }
+            P::first-letter{
+                color: yellow;
+            }
+            li::marker{
+                color: green;
+                font-size: 30px;
+            }
+            input::placeholder{
+                font-size: 24px;
+                color: black;
+            }
+
+            p::before{
+                content: "앞에 추가한 텍스트 요소";
+                font-size: 50px;
+                color: blueviolet;
+            }
+
+            p::after{
+                content: "뒤에 추가한 텍스트 요소";
+                font-size: 50px;
+                color: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <P>퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+            퍼스트 라인 그리고 퍼스트 레터
+        </P>
+        
+        <ul>
+            <li>강아지</li>
+            <li>고양이</li>
+            <li>토끼</li>
+            <li>소</li>
+        </ul>
+        <input type="text" placeholder="아무거나 입력하세요.">
+    </body>
+</html>

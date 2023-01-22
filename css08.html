@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>flexbox 속성에 대한 HTML 문서</title>
+        <style>
+            .container{
+                display: flex;
+                width: 300px; height: 300px;
+                border: 2px solid black;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            .item{
+                width: 120px; height: 60px;
+                background-color: orangered;
+            }
+            .self{
+                align-self: flex-start;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item">1</div>
+            <div class="item self">2</div>
+            <div class="item">3</div>
+        </div>
+    </body>
+</html>

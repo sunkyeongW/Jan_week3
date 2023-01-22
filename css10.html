@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>의사클래스(가상클래스)에 대한 HTML 문서</title>
+        <style>
+            [type="button"]{
+                width: 100px; height: 30px;
+                background-color: tomato; color: white;
+                border: none; border-radius: 8px;
+            }
+            [type="button"]:hover{
+                background-color: blue;
+            }
+            [type="button"]:active{
+                background-color: gray;
+            }
+            [type="text"]:focus{
+                background-color: red;
+                color: white;
+            }
+            input:disabled{
+                height: 300px;
+            }
+            .box{
+                width: 50px; height: 50px;
+                background-color: blue; color: white;
+            }
+            .box:nth-child(3){
+                background-color: red;
+            }
+    
+            
+        </style>
+    </head>
+    <body>
+        <input type="button" value="버튼">
+        <input type="text" placeholder="아무거나" disabled/>
+        <div>
+        <div class="box">1번</div>
+        <div class="box">2번</div>
+        <div class="box">3번</div>
+        <div class="box">4번</div>
+        <div class="box">5번</div>
+    </div>
+    </body>
+</html>

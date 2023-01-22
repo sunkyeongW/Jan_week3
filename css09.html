@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>특성 선택자와 결합자에 대한 HTML 문서</title>
+        <style>
+            [class *="te"]{
+                color: blue;
+            }
+            [id ^="uni"]{
+                color: blueviolet;
+            }
+
+            body h1{
+                color: aqua;
+            }
+
+            h1 ~ p {
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>선택자 연습하기</h1>
+        <p>1번 문단입니다 그냥 태그</p>
+        <p class ="text">2번 문단입니다 클래스 있음</p>
+        <p id="unique">3번 문단입니다 아이디 있음</p>
+        <p class = "text">4번 문단입니다 클래스 있음</p>
+        <p>5번 문단입니다 <span>스판있는</span>태그</p>
+    </body>
+</html>

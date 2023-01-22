@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>상속과 z-index에 대한 HTML 문서</title>
+        <style>
+            .Inheritance{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 300px; height: 300px;
+                color: tomato;
+                font-size: 18px;
+                border: 3px dashed red;}
+
+            p{
+                color: inherit;
+                border: unset;}
+
+            .z>div{
+                width: 100px; height: 100px; position: relative;}
+            
+            .z>div:nth-child(1){background-color: yellow;}
+            .z>div:nth-child(2){background-color: cyan; bottom: 50px;}
+            .z>div:nth-child(3){background-color: ivory; bottom: 100px;}
+            .z>div:nth-child(4){background-color: mediumaquamarine; bottom: 150px;}
+
+            .first{z-index: 1;}
+            .second{z-index: 2;}
+            .third{z-index: 10;}
+            .fourth{z-index: 50;}
+        </style>
+    </head>
+    <body>
+        <div class="Inheritance">
+            <p>가운데 p태그</p>
+        </div>
+        <div class="z">
+            <div class="first">1</div>
+            <div class="second">2</div>
+            <div class="third">3</div>
+            <div class="fourth">4</div>
+        </div>
+    </body>
+</html>
